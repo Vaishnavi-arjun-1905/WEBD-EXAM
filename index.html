@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Document</title>
     <style type="text/css">
       header {
         margin-top: 10px;
         padding: 20px;
+        display: flex;
       }
       .btn btn-primary {
         background-color: lightblue;
@@ -34,7 +31,7 @@
          color: blue; 
          height: 70px;
          width: 1200px;
-         margin-left: 150px;
+         margin-left: 180px;
          border-radius: 10px;
          padding: 10px;
           }
@@ -45,36 +42,335 @@
         padding: 10PX;
         cursor: pointer;
        }
+       footer{
+font: size 15px;
+font-weight: 15px;
+background-color: white;
+color: black;
+display: grid;
+grid-template-columns: 6fr 6fr;
+margin-top: 10px;
+padding: 30px;
+text-align:left;
+justify-content: space-evenly;
+    }
+.title span{
+    display: block;
+    font-size:15px;
+    display: grid;
+    grid-template-columns:3fr, 3fr, 3fr, 3fr;
+}
+.mains{
+    color: rgb(13, 1, 1);
+    padding-bottom: 10px;
+    display: flex;
+    
+    
+}
+.index{
+    display: grid;
+    grid-template-columns: 2.4fr,2.4fr;
+     border-right: 1px solid grey;
+    text-align: left;
+    justify-content: space-evenly;
+    margin-left: 25px;
+}
+.index{
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr;
+}
+.info{
+    display:block;
+    
+}
+.main{
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.searchbar{
+  margin-left: 150px;
+}
+header {
+        display: flex;
+        margin: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    .searchbar img {
+        width: 60px;
+        border-radius: 100px;
+    }
+
+    .searchbar {
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        height: 40px;
+        margin: 20px;
+        border-radius: 6px;
+        border: 2px solid gray;
+        padding-left: 10px;
+    }
+
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-primary {
+        margin: 30px;
+    }
+
+    .middle {
+        font-size: 1.3rem;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+    }
+    .middle span:hover {
+        cursor: pointer;
+        text-shadow: 0 0 10px blue;
+        color: blue;
+
+    }
+
+    .d-inline-flex {
+        display: none;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .bi-list {
+        display: none;
+    }
+
+    @media(max-width:600px) {
+        header {
+            margin: 10px;
+        }
+
+        .bi-list {
+            font-size: 2rem;
+            display: block;
+        }
+
+        .middle {
+            display: none;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        .searchbar img {
+            width: 40px;
+        }
+
+        input {
+            height: 30px;
+            margin: 10px;
+            width: 100px;
+            border-radius: 6px;
+        }
+
+        .btn-primary {
+            margin: 10px;
+            font-size: 0.7rem;
+            padding: 4px;
+            font-weight: bold;
+        }
+
+        .middle {
+            font-size: 1rem;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .middle span {
+            margin: 10px;
+
+        }
+
+        .middle span:hover {
+            cursor: pointer;
+            text-shadow: 0 0 10px blue;
+            color: blue;
+        }
+
+        .menu-bar {
+            font-weight: bolder;
+            display: block;
+        }
+
+        .menu-bar span {
+            padding: 10px;
+        }
+      
+    }
+    footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 4fr 2.5fr 2.5fr 2.5fr 2.5fr;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+
+.footer-brand-name img {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.footer-brand-name aside {
+    padding-left: 0;
+    display: flex;
+}
+
+.data {
+    padding-bottom: 9px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+
+}
+
+.data~span {
+    display: block;
+    font-size: 1rem;
+    color: hwb(0 41% 47%);
+    padding: px;
+}
+
+.footer-icons {
+    font-size: 1.5rem;
+    margin: 10px;
+
+}
+
+.footer-icons span {
+    background-color: rgba(0, 0, 128, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+@media(max-width:600px) {
+
+    footer {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: grid;
+        grid-template-columns: 4fr 2.5fr 2.5fr 2.5fr 2.5fr;
+        gap: 10px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        position: sticky;
+        bottom: 0px;
+        background-color: white;
+    }
+
+    .footer-brand-name img {
+        width: 100px;
+        margin-top: 5px;
+    }
+
+    .footer-brand-name aside {
+        padding-left: 0;
+        display: flex;
+    }
+
+    .data {
+        padding-bottom: 9px;
+        font-size: 0.8rem;
+        font-weight: 900;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 5px;
+
+    }
+
+    .data~span {
+        display: block;
+        font-size: 0.5rem;
+        color: hwb(0 41% 47%);
+    }
+
+    .footer-icons {
+        font-size: 0.9rem;
+        margin: 0px;
+
+        margin-top: 10px;
+    }
+
+    .footer-icons span {
+        background-color: rgba(0, 0, 128, 0.6);
+        color: white;
+    }
+}
     </style>
   </head>
   <body>
     <div class="heading">
       <header>
-        <img src="files/logo.png" />
-        <button class="btn btn-primary">
-          <span class="bi bi-columns-gap p-2"></span>Category
-        </button>
-
-        <div class="main">
-          <main>
-            <span> Demos </span><span class="bi bi-chevrolet"></span>
-            <span> Pages </span>
-            <span> Accounts </span>
-            <span> Megamenus </span>
-            <span> . . . </span>
-          </main>
-        </div>
-
-        <div class="searchbar">
-          <input type="text" placeholder="search" class="bi bi-search" />
-        </div>
+          <p class="d-inline-flex ">
+              <a class="mt-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">
+                  <i class="bi bi-list"></i>
+              </a>
+          </p>
+          <img src="files/logo.png">
+          <button class="btn btn-primary">
+              <span class="bi bi-columns-gap"></span>Category
+          </button>
+  
+          <div class="main">
+              <main class="middle">
+                  <span> Demos </span><span class="bi bi-chevrolet"></span>
+                  <span> Pages </span>
+                  <span> Accounts </span>
+                  <span> Megamenus </span>
+              </main>
+          </div>
+          <div class="searchbar">
+              <input type="text" placeholder="search" class="bi bi-search" />
+              <span>
+                  <img src="profile.jpg" alt="">
+              </span>
+          </div>
       </header>
+      <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+              <main class="menu-bar">
+                  <span> Demos </span><span class="bi bi-chevrolet"></span>
+                  <span> Pages </span>
+                  <span> Accounts </span>
+                  <span> Megamenus </span>
+              </main>
+          </div>
+      </div>
+    </div>
+    <div style="margin-top: 40px;">
+    <img src="files/head.png" style="margin-left: 150px; width: 1200px; height: 150px;">
     </div>
    <main class="webbody">
-    <h1 style="display: flex; justify-content:center; font-weight:bold">
+    <h1 style="display: flex; justify-content:center; font-weight:bold; margin-top: 40px;">
         Most Popular Courses
     </h1>
-    <p style="display: flex; justify-content:center;" class="m-25px">Choose from hundreds of courses from specialist organizations</p>
+    <p style="display: flex; justify-content:center; margin-bottom: 20px;" class="m-25px">Choose from hundreds of courses from specialist organizations</p>
    </main>
 
    <nav class="navbar" style="background-color: #e3f2fd;">
@@ -182,10 +478,10 @@
           <p class="card-text">Far advanced settling say finished raillery. Offered chiefly farther</p>
           <div style="display: flex;">
           <div class="star" style="color:gold;">
-          <span class="bi bi-star-fill"></span>
-          <span class="bi bi-star-fill"></span>
-          <span class="bi bi-star-fill"></span>
-          <span class="bi bi-star-fill"></span>
+          <span class="bi bi-star-fill"></span><i class="bi bi-chevron-down"></i>
+          <span class="bi bi-star-fill"></span><i class="bi bi-chevron-down"></i>
+          <span class="bi bi-star-fill"></span><i class="bi bi-chevron-down"></i>
+          <span class="bi bi-star-fill"></span><i class="bi bi-chevron-down"></i>
           <span class="bi bi-star"></span>
            </div>
            <div style="padding-left: 15px;">
@@ -313,5 +609,48 @@
         </div>
       </div>
   </section>
+
+  <footer>
+    <div>
+        <div class="footer-brand-name">
+            <img src="files/logo.png" alt="">
+        </div>
+        <div class="data"></div>
+        <span>Eduport education theme built specially for the education centerswhich is dedicated to
+            innovators</span>
+        <aside class="footer-icons">
+            <span class="bi bi-facebook m-1"></span>
+            <span class="bi bi-youtube m-1"></span>
+            <span class="bi bi-instagram m-1"></span>
+            <span class="bi bi-twitter m-1"></span>
+        </aside>
+    </div>
+    <div>
+        <div class="data">Company</div>
+        <span>Contact Us</span>
+        <span>FAQs</span>
+        <span>News</span>
+        <span>Library</span>
+    </div>
+    <div>
+        <div class="data">Comunity</div>
+        <span>Our Story</span>
+        <span>Vision</span>
+        <span>Terms & Conditions</span>
+        <span>Privacy & Cookie policy</span>
+    </div>
+    <div>
+        <div class="data">Teaching</div>
+        <span>To be Teacher</span>
+        <span>Grades</span>
+        <span>Terms & Conditions</span>
+        <span>Tests</span>
+    </div>
+    <div>
+        <div class="data">Contact</div>
+        <span>Toll Free <b>+91 1234567890</b></span>
+        <span>Email : <b>example@gmail.com</b></span>
+    </div>
+</footer>
   </body>
 </html>
